@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Live Navi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="LiveNaviIcon.ico">
+
+    <script type="text/javascript">
+        function showTime() {
+            var time = new Date();
+            var y = time.getFullYear();
+            var mon = time.getMonth() + 1; //0-11
+            var d = time.getDate();
+            var h = time.getHours();
+            var m = time.getMinutes();
+            var s = time.getSeconds();
+            var addNumber = function(value) {
+                return value > 9 ? value : "0" + value;
+            }
+            var date = y + "-" + addNumber(mon) + "-" + addNumber(d) + " " + addNumber(h) + ":" + addNumber(m) + ":" + addNumber(s);
+            document.getElementById('clock').innerHTML = "当前时间： " + date + " CST";
+            clock = window.setTimeout("showTime()", 1000);
+        }
+        var clock = window.setTimeout("showTime()", 10); //立即显示时间
+    </script>
+
+    <style>
+        body {
+            background-color: rgb(211, 233, 232);
+            background-image: url(LiveNaviBg.png);
+            background-attachment: fixed;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            /* 背景就是从 https://t.bilibili.com/ 那里抄下来的，是2023年的新版背景。背景设置为适应高度，对于竖屏设备可以显示到最左边的部分，而对于横屏设备则用纯色来填充最右边空缺的部分。 */
+        }
+        
+        div {
+            width: 61.8%;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* margin-left: 10px;
+            margin-right: 10px; */
+            border-style: outset;
+            border-radius: 16px;
+            border-color: #FF80AB;
+            /* background-color: #FFFFFF; */
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        button.toLive {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #FF80AB;
+            border: #FF80AB;
+            border-style: solid;
+            border-radius: 5px;
+            border-width: 1px;
+            font-size: large;
+        }
+        
+        button.toLive:hover {
+            background-color: #FF80AB;
+            color: #FFFFFF;
+        }
+        
+        button.toLive:active {
+            background-color: #FF327C;
+            color: #FFFFFF;
+            border: #FF327C;
+            border-style: solid;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+        
+        button.specialLink {
+            font-size: 16px;
+            color: white;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-style: none;
+            border-radius: 16px;
+            padding: 10px;
+        }
+        
+        button#loginPage {
+            background-color: #00a1d7;
+        }
+        
+        button#tyresSearchPage {
+            background-color: #f30213;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="headDiv" style="background-color: #FF80AB;">
+        <h1 style="color: #FFFFFF;">Bilibili Live Navigation Page</h1>
+    </div>
+    <div>
+        <p id="clock">当前时间：正在加载中……</p>
+        <p>欢迎使用 Bilibili Live Android APP 。请在以下列表挑选你想看的主播的直播间。</p>
+    </div>
+    <div>
+        <h2>游戏主播</h2>
+        <p>绝地求生 | <a href="https://live.bilibili.com/h5/4404024"><button class="toLive">零一 / 鲁大能</button></a></p>
+        <p>原神抽卡 | <a href="https://live.bilibili.com/h5/1134"><button class="toLive">小霖QL</button></a></p>
+        <p>逃离塔科夫 | <a href="https://live.bilibili.com/h5/904823"><button class="toLive">老Key725</button></a></p>
+        <p>DCS | <a href="https://live.bilibili.com/h5/11559434"><button class="toLive">小猫蛋卷</button></a></p>
+        <p>CS:GO | <a href="https://live.bilibili.com/10129169"><button class="toLive">卡比同学</button></a></p>
+        <p>我的世界 | <a href="https://live.bilibili.com/81435"><button class="toLive">黑山大叔</button></a></p>
+        <p>纯黑 | <a href="https://live.bilibili.com/1023"><button class="toLive">-纯黑-</button></a></p>
+        <p>黑桐谷歌 | <a href="https://live.bilibili.com/139"><button class="toLive">黑桐谷歌</button></a></p>
+        <p>英雄联盟 | <a href="https://live.bilibili.com/555"><button class="toLive">Uzi</button></a></p>
+        <p>英雄联盟 | <a href="https://live.bilibili.com/24683219"><button class="toLive">烂活电竞</button></a></p>
+        <p>配音演员 | <a href="https://live.bilibili.com/21220268"><button class="toLive">苏子芜的快落直播间</button></a></p>
+        <p>配音演员 | <a href="https://live.bilibili.com/597450"><button class="toLive">花园花玲</button></a></p>
+        <p>配音演员 | <a href="https://live.bilibili.com/392523"><button class="toLive">多多poi丶</button></a></p>
+        <p>原神二创 | <a href="https://live.bilibili.com/21764943"><button class="toLive">一卷心菜一</button></a></p>
+        <p>原神二创 | <a href="https://live.bilibili.com/21425621"><button class="toLive">双马尾的麻薯</button></a></p>
+        <p>原神 | <a href="https://live.bilibili.com/23459804"><button class="toLive">自由魂儿儿儿</button></a></p>
+        <p>非小酋官方主播 | <a href="https://live.bilibili.com/23013028"><button class="toLive">风晴色</button></a></p>
+        <p>原神代肝 | <a href="https://live.bilibili.com/25304384"><button class="toLive">老云哥</button></a></p>
+        <p>原神代肝 | <a href="https://live.bilibili.com/27267295"><button class="toLive">旅行者_言</button></a></p>
+    </div>
+    <div>
+        <h2>萌宠主播</h2>
+        <p>小黑 | <a href="https://live.bilibili.com/21969888"><button class="toLive">烟台的苹果哥</button></a></p>
+        <p>月饼、粽子、糯米 | <a href="https://live.bilibili.com/6966366"><button class="toLive">佚村夫</button></a></p>
+        <p>石矶娘娘 | <a href="https://live.bilibili.com/22988959"><button class="toLive">团宠酸奶妹</button></a></p>
+        <p>妙妙刺挠 | <a href="https://live.bilibili.com/6966366"><button class="toLive">酒酿大丸子-</button></a></p>
+    </div>
+    <div>
+        <h2>特别节目</h2>
+        <p>A-SOUL | <a href="https://live.bilibili.com/22637261"><button class="toLive">嘉然今天吃什么</button></a></p>
+        <p>原神版本前瞻特别节目 | <a href="https://live.bilibili.com/21987615"><button class="toLive">原神</button></a></p>
+        <p>航天发射 | <a href="https://live.bilibili.com/830733"><button class="toLive">PureCosmos</button></a></p>
+        <p>中国航天发射 | <a href="https://live.bilibili.com/21686237"><button class="toLive">央视新闻</button></a></p>
+    </div>
+    <div>
+        <h2>7x24小时不间断推流直播电视台</h2>
+        <p>ISS直播 | <a href="https://live.bilibili.com/14047"><button class="toLive">Zelo-Balance</button></a></p>
+        <p>博卡奇卡现场直播 | <a href="https://live.bilibili.com/390508"><button class="toLive">OneMicrosoft</button></a></p>
+        <p>航天直播 | <a href="https://live.bilibili.com/21298619"><button class="toLive">直播地球</button></a></p>
+        <p>LOL赛事 | <a href="https://live.bilibili.com/h5/6"><button class="toLive">哔哩哔哩英雄联盟赛事</button></a></p>
+        <p>CS赛事 | <a href="https://live.bilibili.com/h5/35"><button class="toLive">CSGO官方赛事</button></a></p>
+    </div>
+    <div id="bottomDiv">
+        <a href="https://passport.bilibili.com/h5-app/passport/login">
+            <button id="loginPage" class="specialLink">
+                尝试通过哔哩哔哩H5页面 登录账号👉
+            </button>
+        </a>
+        <a href="https://search.jd.com/search?keyword=185%2F60R15%2084H">
+            <button id="tyresSearchPage" class="specialLink">
+                185/60R15 84H - 商品搜索 - 京东👉
+            </button>
+        </a>
+        <p>声明：网页作者不负有该网页之任何版权，所有组成部分之版权归各相关方所有。</p>
+        <p>警告：请勿使用该网页进行任何违法违规之活动。</p>
+    </div>
+</body>
+
+</html>

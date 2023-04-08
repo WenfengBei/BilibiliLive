@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bilibili Live</string>
+    <string name="app_type">WebView</string>
+    <string name="tab_text_1">直播间导航页</string>
+    <string name="tab_text_2">鲁大能</string>
+    <string name="tab_text_3">小霖QL</string>
+</resources>
