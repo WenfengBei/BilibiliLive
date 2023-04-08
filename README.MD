@@ -10,18 +10,11 @@
 
 1.1.3版本是最近开发的，也是最后一个竖屏的版本，已经知道如何使用FAB的功能了。
 
-现在的1.2.0版本强制横屏+全屏，并且已经放弃了Section的代码，全靠一个导航页来选择直播间，大大方便了后续持续优化体验。
+从1.2.0版本开始，强制横屏+全屏，并且已经放弃了Section的代码，全靠一个导航页来选择直播间，大大方便了后续持续优化体验。
 
 ### 导航页
 
 请使用者自己替换 `tv.b23.live.MainActivity.displayLiveNaviPage()` 中的 `webView.loadUrl("http://你自己的网站/live/");` 。
-
-### 请注意APK文件备注
-
-\app\release目录下的APK文件备注：
-
-- Bilibili Live 1.1.3 release (竖屏最终版).apk 竖屏版本
-- Bilibili Live 1.2.0 release (横屏版).apk 横屏版本
 
 ## LiveNaviPage 部分
 
