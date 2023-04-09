@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "返回导航页", Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
-//                displayLiveNaviPage();
-                onDestroy();
+                displayLiveNaviPage();
             }
         });
         ExtendedFloatingActionButton fabSetScrOri = findViewById(R.id.setScrOri);
