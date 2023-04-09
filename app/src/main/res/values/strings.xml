@@ -4,4 +4,6 @@
     <string name="tab_text_1">直播间导航页</string>
     <string name="tab_text_2">鲁大能</string>
     <string name="tab_text_3">小霖QL</string>
+    <string name="fabBackLiveNaviDescription">返回导航页</string>
+    <string name="fabSetScrOriDescription">翻转屏幕方向</string>
 </resources>

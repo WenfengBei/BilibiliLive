@@ -23,6 +23,21 @@
             clock = window.setTimeout("showTime()", 1000);
         }
         var clock = window.setTimeout("showTime()", 10); //立即显示时间
+
+        // 我本来计划用相关的API来获取直播间状态，但是遇到CORS问题，就先不搞了。
+        // function getLiveStatus() {
+        //     var xhr = new XMLHttpRequest(),
+        //         method = "GET",
+        //         url = "https://api.bilibili.com/x/space/acc/info?mid=8309011&jsonp=jsonp";
+        //     xhr.open(method, url, true);
+        //     xhr.send();
+        //     xhr.onreadystatechange = function() {
+        //         if (xhr.readyState === 4 && xhr.status === 200) {
+        //             var json = xhr.responseText;
+        //             console.log(json);
+        //         }
+        //     }
+        // }
     </script>
 
     <style>
@@ -100,9 +115,16 @@
             background-color: #f30213;
         }
     </style>
+
+    <script type="text/javascript">
+    </script>
 </head>
 
 <body>
+    <!-- <div style="margin-bottom: 100%;">
+        <h1>测试专区</h1>
+        <p>测试哔哩哔哩直播间API</p>
+    </div> -->
     <div id="headDiv" style="background-color: #FF80AB;">
         <h1 style="color: #FFFFFF;">Bilibili Live Navigation Page</h1>
     </div>
@@ -155,25 +177,25 @@
         <p>CS赛事 | <a href="https://live.bilibili.com/h5/35"><button class="toLive">CSGO官方赛事</button></a></p>
     </div>
     <div>
-        <h2>Bilibili Live APP 下载区</h2>
+        <h2>Bilibili Live Android APP 下载区</h2>
         <p>
-            <a href="Bilibili Live 1.2.1 release.apk">
+            <a href="Bilibili Live 1.3.0 release.apk">
                 <button id="downloadAPP" class="toLive">
-                    点击下载最新版本 v1.2.1 
+                    点击下载最新版本 v1.3.0 
                 </button>
             </a>
         </p>
         <p>
-            <a href="Bilibili Live 1.1.3 release (竖屏最终版).apk">
+            <a href="https://github.com/Tommy8080/BilibiliLive">
                 <button id="downloadAPP" class="toLive">
-                    点击下载竖屏版本 v1.1.3
+                    项目 GitHub 地址
                 </button>
             </a>
         </p>
         <p>声明：网页及APP作者不负有该网页及APP之任何版权，所有组成部分之版权归各相关方所有。</p>
         <p>警告：请勿使用该网页及APP进行任何违法违规之活动。</p>
     </div>
-    <div id="bottomDiv">
+    <div id="bottomDiv" style="margin-bottom: 320px;">
 
         <a href="https://passport.bilibili.com/h5-app/passport/login">
             <button id="loginPage" class="specialLink">
