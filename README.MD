@@ -41,7 +41,7 @@
 
 ### 导航页
 
-请使用者自己替换 `tv.b23.live.MainActivity.displayLiveNaviPage()` 中的 `webView.loadUrl("http://你自己的网站/live/");` 。
+请使用者自己替换 `tv.b23.live.MyStrings.java` 中的 `你自己的网站` 。
 
 ## LiveNaviPage 部分
 
