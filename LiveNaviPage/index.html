@@ -30,7 +30,10 @@
         //         method = "GET",
         //         url = "https://api.bilibili.com/x/space/acc/info?mid=8309011&jsonp=jsonp";
         //     xhr.open(method, url, true);
+        //     xhr.setRequestHeader("Origin","http://www.bilibili.com");
+        //     xhr.setRequestHeader("origin","http://www.bilibili.com");
         //     xhr.send();
+        //     console.log(xhr);
         //     xhr.onreadystatechange = function() {
         //         if (xhr.readyState === 4 && xhr.status === 200) {
         //             var json = xhr.responseText;
@@ -74,6 +77,8 @@
             border-radius: 5px;
             border-width: 1px;
             font-size: large;
+            /* 设置渐变动画 */
+            transition: background-color 0.3s, color 0.2s;
         }
         
         button.toLive:hover {
@@ -100,7 +105,7 @@
             font-size: 16px;
             color: white;
             margin: auto;
-            margin-top: 20px;
+            margin-top: 5px;
             margin-bottom: 20px;
             border-style: none;
             border-radius: 16px;
@@ -108,7 +113,33 @@
         }
         
         button#loginPage {
+            background-color: #FF80AB;
+        }
+        
+        button#getBonusPage {
             background-color: #00a1d7;
+        }
+        
+        button#runoobOfficial {
+            background-color: #96b97d;
+        }
+        
+        button#oi-wikiPage {
+            color: black;
+            font-weight: bold;
+        }
+        
+        button#computerDotCom {
+            color: white;
+            background-color: black;
+        }
+        
+        button#yuanshenExchangeCodePage {
+            background-color: #009ef7;
+        }
+        
+        button#AkashaDatabase {
+            background-color: #4cab86;
         }
         
         button#tyresSearchPage {
@@ -121,10 +152,6 @@
 </head>
 
 <body>
-    <!-- <div style="margin-bottom: 100%;">
-        <h1>测试专区</h1>
-        <p>测试哔哩哔哩直播间API</p>
-    </div> -->
     <div id="headDiv" style="background-color: #FF80AB;">
         <h1 style="color: #FFFFFF;">Bilibili Live Navigation Page</h1>
     </div>
@@ -137,51 +164,65 @@
         <p>绝地求生 | <a href="https://live.bilibili.com/h5/4404024"><button class="toLive">零一 / 鲁大能</button></a></p>
         <p>原神抽卡 | <a href="https://live.bilibili.com/h5/1134"><button class="toLive">小霖QL</button></a></p>
         <p>逃离塔科夫 | <a href="https://live.bilibili.com/h5/904823"><button class="toLive">老Key725</button></a></p>
+        <p>黑桐谷歌 | <a href="https://live.bilibili.com/h5/139"><button class="toLive">黑桐谷歌</button></a></p>
         <p>DCS | <a href="https://live.bilibili.com/h5/11559434"><button class="toLive">小猫蛋卷</button></a></p>
-        <p>CS:GO | <a href="https://live.bilibili.com/10129169"><button class="toLive">卡比同学</button></a></p>
-        <p>我的世界 | <a href="https://live.bilibili.com/81435"><button class="toLive">黑山大叔</button></a></p>
-        <p>纯黑 | <a href="https://live.bilibili.com/1023"><button class="toLive">-纯黑-</button></a></p>
-        <p>黑桐谷歌 | <a href="https://live.bilibili.com/139"><button class="toLive">黑桐谷歌</button></a></p>
-        <p>英雄联盟 | <a href="https://live.bilibili.com/555"><button class="toLive">Uzi</button></a></p>
-        <p>英雄联盟 | <a href="https://live.bilibili.com/24683219"><button class="toLive">烂活电竞</button></a></p>
-        <p>配音演员 | <a href="https://live.bilibili.com/21220268"><button class="toLive">苏子芜的快落直播间</button></a></p>
-        <p>配音演员 | <a href="https://live.bilibili.com/597450"><button class="toLive">花园花玲</button></a></p>
-        <p>配音演员 | <a href="https://live.bilibili.com/392523"><button class="toLive">多多poi丶</button></a></p>
-        <p>原神二创 | <a href="https://live.bilibili.com/21764943"><button class="toLive">一卷心菜一</button></a></p>
-        <p>原神二创 | <a href="https://live.bilibili.com/21425621"><button class="toLive">双马尾的麻薯</button></a></p>
-        <p>原神 | <a href="https://live.bilibili.com/23459804"><button class="toLive">自由魂儿儿儿</button></a></p>
-        <p>非小酋官方主播 | <a href="https://live.bilibili.com/23013028"><button class="toLive">风晴色</button></a></p>
-        <p>原神代肝 | <a href="https://live.bilibili.com/25304384"><button class="toLive">老云哥</button></a></p>
-        <p>原神代肝 | <a href="https://live.bilibili.com/27267295"><button class="toLive">旅行者_言</button></a></p>
-    </div>
-    <div>
-        <h2>萌宠主播</h2>
-        <p>小黑 | <a href="https://live.bilibili.com/21969888"><button class="toLive">烟台的苹果哥</button></a></p>
-        <p>月饼、粽子、糯米 | <a href="https://live.bilibili.com/6966366"><button class="toLive">佚村夫</button></a></p>
-        <p>石矶娘娘 | <a href="https://live.bilibili.com/22988959"><button class="toLive">团宠酸奶妹</button></a></p>
-        <p>妙妙刺挠 | <a href="https://live.bilibili.com/6966366"><button class="toLive">酒酿大丸子-</button></a></p>
-    </div>
-    <div>
-        <h2>特别节目</h2>
-        <p>A-SOUL | <a href="https://live.bilibili.com/22637261"><button class="toLive">嘉然今天吃什么</button></a></p>
-        <p>原神版本前瞻特别节目 | <a href="https://live.bilibili.com/21987615"><button class="toLive">原神</button></a></p>
-        <p>航天发射 | <a href="https://live.bilibili.com/830733"><button class="toLive">PureCosmos</button></a></p>
-        <p>中国航天发射 | <a href="https://live.bilibili.com/21686237"><button class="toLive">央视新闻</button></a></p>
+        <p>CS:GO | <a href="https://live.bilibili.com/h5/10129169"><button class="toLive">卡比同学</button></a></p>
+        <p>我的世界 | <a href="https://live.bilibili.com/h5/81435"><button class="toLive">黑山大叔</button></a></p>
+        <p>纯黑 | <a href="https://live.bilibili.com/h5/1023"><button class="toLive">-纯黑-</button></a></p>
+        <p>英雄联盟 | <a href="https://live.bilibili.com/h5/555"><button class="toLive">Uzi</button></a></p>
+        <p>英雄联盟 | <a href="https://www.douyu.com/252140"><button class="toLive">Doinb</button></a></p>
+        <p>英雄联盟 | <a href="https://www.douyu.com/138286"><button class="toLive">Wh1t3zZ</button></a></p>
+        <p>英雄联盟 | <a href="https://bj.afreecatv.com/bery0202"><button class="toLive">BeryL</button></a></p>
+        <p>配音演员 | <a href="https://live.bilibili.com/h5/21220268"><button class="toLive">苏子芜的快落直播间</button></a></p>
+        <p>配音演员 | <a href="https://live.bilibili.com/h5/597450"><button class="toLive">花园花玲</button></a></p>
+        <p>配音演员 | <a href="https://live.bilibili.com/h5/392523"><button class="toLive">多多poi丶</button></a></p>
+        <p>原神二创 | <a href="https://live.bilibili.com/h5/21764943"><button class="toLive">一卷心菜一</button></a></p>
+        <p>原神二创 | <a href="https://live.bilibili.com/h5/21425621"><button class="toLive">双马尾的麻薯</button></a></p>
+        <p>原神 | <a href="https://live.bilibili.com/h5/23459804"><button class="toLive">自由魂儿儿儿</button></a></p>
+        <p>非小酋官方主播 | <a href="https://live.bilibili.com/h5/23013028"><button class="toLive">风晴色</button></a></p>
+        <p>原神代肝 | <a href="https://live.bilibili.com/h5/25304384"><button class="toLive">老云哥</button></a></p>
+        <p>原神代肝 | <a href="https://live.bilibili.com/h5/27267295"><button class="toLive">旅行者_言</button></a></p>
+        <p>吹牛逼 | <a href="https://live.bilibili.com/h5/24683219"><button class="toLive">烂活电竞</button></a></p>
     </div>
     <div>
         <h2>7x24小时不间断推流直播电视台</h2>
-        <p>ISS直播 | <a href="https://live.bilibili.com/14047"><button class="toLive">Zelo-Balance</button></a></p>
-        <p>博卡奇卡现场直播 | <a href="https://live.bilibili.com/390508"><button class="toLive">OneMicrosoft</button></a></p>
-        <p>航天直播 | <a href="https://live.bilibili.com/21298619"><button class="toLive">直播地球</button></a></p>
+        <p>ISS直播 | <a href="https://live.bilibili.com/h5/14047"><button class="toLive">Zelo-Balance</button></a></p>
+        <p>博卡奇卡现场直播 | <a href="https://live.bilibili.com/h5/390508"><button class="toLive">OneMicrosoft</button></a></p>
+        <p>航天直播 | <a href="https://live.bilibili.com/h5/21298619"><button class="toLive">直播地球</button></a></p>
         <p>LOL赛事 | <a href="https://live.bilibili.com/h5/6"><button class="toLive">哔哩哔哩英雄联盟赛事</button></a></p>
         <p>CS赛事 | <a href="https://live.bilibili.com/h5/35"><button class="toLive">CSGO官方赛事</button></a></p>
     </div>
     <div>
+        <h2>萌宠主播</h2>
+        <p>小黑 | <a href="https://live.bilibili.com/h5/21969888"><button class="toLive">烟台的苹果哥</button></a></p>
+        <p>月饼、粽子、糯米 | <a href="https://live.bilibili.com/h5/6966366"><button class="toLive">佚村夫</button></a></p>
+        <p>石矶娘娘 | <a href="https://live.bilibili.com/h5/22988959"><button class="toLive">团宠酸奶妹</button></a></p>
+        <p>妙妙刺挠 | <a href="https://live.bilibili.com/h5/6966366"><button class="toLive">酒酿大丸子-</button></a></p>
+    </div>
+    <div>
+        <h2>特别节目</h2>
+        <p>A-SOUL | <a href="https://live.bilibili.com/h5/22637261"><button class="toLive">嘉然今天吃什么</button></a></p>
+        <p>原神版本前瞻特别节目 | <a href="https://live.bilibili.com/h5/21987615"><button class="toLive">原神</button></a></p>
+        <p>前瞻直播兑换码 | <a href="https://feixiaoqiu.com/exchange_code/"><button class="toLive">非小酋</button></a></p>
+        <h3>世界一级方程式赛车</h3>
+        <p>央视5套 | <a href="https://tv.cctv.com/live/cctv5"><button class="toLive">CCTV-5</button></a></p>
+        <p>央视5+ | <a href="https://tv.cctv.com/live/cctv5plus"><button class="toLive">CCTV-5+</button></a></p>
+        <p>广东睇肉频道 | <a href="https://www.gdtv.cn/tvChannelDetail/47"><button class="toLive">广东体育</button></a></p>
+        <p>腾讯赛车 | <a href="https://sports.qq.com/kbsweb/index.htm#100361"><button class="toLive">腾讯体育</button></a></p>
+        <p>企鹅体育 | <a href="https://live.qq.com/10002730"><button class="toLive">邱超norman</button></a></p>
+        <p>企鹅体育 | <a href="https://live.qq.com/10067029"><button class="toLive">跑圈界力源</button></a></p>
+        <p>B站直播 | <a href="https://live.bilibili.com/h5/22746664"><button class="toLive">FE电动方程式</button></a></p>
+        <h3>航天发射</h3>
+        <p>中国航天发射 | <a href="https://tv.cctv.com/live/cctv13"><button class="toLive">CCTV-13</button></a></p>
+        <p>B站直播 | <a href="https://live.bilibili.com/h5/21686237"><button class="toLive">央视新闻</button></a></p>
+        <p>航天发射解说 | <a href="https://live.bilibili.com/h5/830733"><button class="toLive">PureCosmos</button></a></p>
+    </div>
+    <div>
         <h2>Bilibili Live Android APP 下载区</h2>
         <p>
-            <a href="Bilibili Live 1.3.1 release.apk">
+            <a href="Bilibili Live 1.3.2 release.apk">
                 <button id="downloadAPP" class="toLive">
-                    点击下载最新版本 v1.3.1 
+                    点击下载最新版本 v1.3.2
                 </button>
             </a>
         </p>
@@ -192,19 +233,85 @@
                 </button>
             </a>
         </p>
-        <p>声明：网页及APP作者不负有该网页及APP之任何版权，所有组成部分之版权归各相关方所有。</p>
+        <p>声明：网页及APP作者都是Tommy8080@GitHub，但他不负有该网页及APP之任何版权，所有组成部分之版权归各相关方所有。</p>
         <p>警告：请勿使用该网页及APP进行任何违法违规之活动。</p>
     </div>
-    <div id="bottomDiv" style="margin-bottom: 320px;">
-
+    <div>
+        <h2>新闻链接</h2>
+        <h3>赛车新闻</h3>
+        <p>F1官网 | <a href="https://www.formula1.com/"><button class="toLive">Formula 1</button></a></p>
+        <p>FE官网 | <a href="https://www.fiaformulae.com/en"><button class="toLive">Formula E</button></a></p>
+        <p>Motor网 | <a href="https://www.motorsport.com/f1/news/"><button class="toLive">MotorSports</button></a></p>
+        <p>Motor网 中文 | <a href="https://cn.motorsport.com/"><button class="toLive">MotorSports</button></a></p>
+        <p>Auto网 | <a href="https://www.autosport.com/f1/"><button class="toLive">AutoSport</button></a></p>
+        <p>2023赛季车手积分榜 | <a href="https://www.motorsport.com/f1/standings/2023/?type=Driver"><button class="toLive">Drivers Standings</button></a></p>
+        <p>2023赛季车队积分榜 | <a href="https://www.motorsport.com/f1/standings/2023/?type=Team"><button class="toLive">Teams Standings</button></a></p>
+        <h3>航天新闻</h3>
+        <p>CNSA | <a href="http://www.cnsa.gov.cn/n6758823/n6758838/index.html"><button class="toLive">中国国家航天局</button></a></p>
+        <p>CMS | <a href="http://www.cmse.gov.cn/xwzx/zhxw/"><button class="toLive">中国载人航天</button></a></p>
+        <p>CLEP | <a href="http://www.clep.org.cn/n5982341/index.html"><button class="toLive">中国探月</button></a></p>
+        <p>CSS轨道 | <a href="https://www.n2yo.com/satellites/?c=54"><button class="toLive">N2YO</button></a></p>
+        <p>全球航天动态 | <a href="https://spaceflightnow.com/"><button class="toLive">Space Flight Now</button></a></p>
+        <p>全球航天动态 | <a href="https://www.nasaspaceflight.com/"><button class="toLive">Nasa Space Flight Now</button></a></p>
+        <p>全球航天动态 | <a href="https://www.space.com/"><button class="toLive">Space</button></a></p>
+        <p>公开的发射计划 | <a href="https://spaceflightnow.com/launch-schedule/"><button class="toLive">Launch Schedule</button></a></p>
+        <p>航天爱好者网 | <a href="http://www.spaceflightfans.cn/"><button class="toLive" disabled="disabled">已无法访问</button></a></p>
+		<h3>军事新闻</h3>
+        <p>国防部 | <a href="http://www.mod.gov.cn/"><button class="toLive">中华人民共和国国防部</button></a></p>
+        <p>军网中文 | <a href="http://www.81.cn/"><button class="toLive">中国军网</button></a></p>
+        <p>军网英文 | <a href="http://eng.chinamil.com.cn/"><button class="toLive">China Military</button></a></p>
+        <p>全球海军动态 | <a href="https://www.navalnews.com/"><button class="toLive">Naval News</button></a></p>
+    </div>
+    <div id="bottomDiv">
+        <h2>特别链接区</h2>
         <a href="https://passport.bilibili.com/h5-app/passport/login">
             <button id="loginPage" class="specialLink">
                 尝试通过哔哩哔哩H5页面 登录账号👉
             </button>
         </a>
+        <a href="https://account.bilibili.com/account/big/myPackage">
+            <button id="getBonusPage" class="specialLink">
+                年度大会员 每月领5B币👉
+            </button>
+        </a>
+        <a href="https://www.runoob.com/">
+            <button id="runoobOfficial" class="specialLink">
+                菜鸟教程 官方网站
+            </button>
+        </a>
+        <a href="https://c.runoob.com/">
+            <button id="runoobOfficial" class="specialLink">
+                菜鸟工具 官方网站
+            </button>
+        </a>
+        <a href="https://oi-wiki.org">
+            <button id="oi-wikiPage" class="specialLink">
+                OI Wiki
+            </button>
+        </a>
+        <a href="https://computer.com">
+            <button id="computerDotCom" class="specialLink">
+                Computer.com 网站已接入 GPT-4 🚀
+            </button>
+        </a>
+        <a href="https://feixiaoqiu.com/exchange_code/">
+            <button id="yuanshenExchangeCodePage" class="specialLink">
+                前瞻直播兑换码
+            </button>
+        </a>
+        <a href="https://akashadata.com">
+            <button id="AkashaDatabase" class="specialLink">
+                虚空数据库 Akasha Database 👂
+            </button>
+        </a>
+        <a href="https://wiki.biligame.com/ys/">
+            <button id="loginPage" class="specialLink">
+                B站原神Wiki
+            </button>
+        </a>
         <a href="https://search.jd.com/search?keyword=185%2F60R15%2084H">
             <button id="tyresSearchPage" class="specialLink">
-                185/60R15 84H - 商品搜索 - 京东👉
+                185/60R15 84H - 商品搜索 - 京东
             </button>
         </a>
     </div>

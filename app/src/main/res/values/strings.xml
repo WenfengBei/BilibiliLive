@@ -6,4 +6,8 @@
     <string name="tab_text_3">小霖QL</string>
     <string name="fabBackLiveNaviDescription">返回导航页</string>
     <string name="fabSetScrOriDescription">翻转屏幕方向</string>
+    <string name="fabGoBackPage">返回上一页</string>
+    <string name="textGoBackPage">返回上页</string>
+    <string name="textBackLiveNavi">导航主页</string>
+    <string name="textSetScrOri">翻转屏幕</string>
 </resources>

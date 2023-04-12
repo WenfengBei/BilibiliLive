@@ -12,33 +12,48 @@
         android:layout_height="match_parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/backLiveNavi"
+        android:id="@+id/fabGoBackPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="50dp"
-        android:contentDescription="@string/fabBackLiveNaviDescription"
-        android:src="@drawable/round_home_black_48dp"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/fabGoBackPage"
+        android:src="@drawable/arrow_back"
         app:fabSize="mini"
-        app:backgroundTint="@color/pink_700"
-        app:rippleColor="@color/pink_200"
+        app:backgroundTint="@color/blue_700"
+        app:rippleColor="@color/blue_300"
         app:tint="@color/white" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/setScrOri"
+        android:id="@+id/fabBackLiveNavi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="100dp"
-        android:contentDescription="@string/fabSetScrOriDescription"
-        android:src="@drawable/round_fit_screen_black_48dp"
+        android:contentDescription="@string/fabBackLiveNaviDescription"
+        android:src="@drawable/home"
         app:fabSize="mini"
-        app:backgroundTint="@color/blue_700"
-        app:rippleColor="@color/blue_300"
+        app:backgroundTint="@color/pink_700"
+        app:rippleColor="@color/pink_200"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSetScrOri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/fabSetScrOriDescription"
+        android:src="@drawable/close_fullscreen"
+        app:fabSize="mini"
+        app:backgroundTint="@color/teal_700"
+        app:rippleColor="@color/teal_200"
         app:tint="@color/white" />
     <!--android:src=可以用来设置FAB的图标-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

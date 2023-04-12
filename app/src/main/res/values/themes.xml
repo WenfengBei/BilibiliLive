@@ -14,19 +14,19 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="MyAppTheme.NoActionBar">
+    <style name="MyAppTheme.EnableActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <!--  完全隐藏  -->
+    <style name="MyAppTheme.LandscapeFullScreen">
         <item name="windowActionBar">true</item>
         <!-- 隐藏状态栏(应用全屏) -->
         <item name="android:windowFullscreen">true</item>
         <!-- 隐藏标题栏 -->
         <item name="windowNoTitle">true</item>
-    </style>
-
-    <!--  什么都不隐藏  -->
-    <style name="MyAppTheme.EnableActionBar">
-        <item name="windowActionBar">true</item>
-        <item name="android:windowFullscreen">false</item>
-        <item name="windowNoTitle">false</item>
     </style>
 
     <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
