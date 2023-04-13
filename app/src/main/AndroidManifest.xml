@@ -16,7 +16,7 @@
         <activity
             android:name="tv.b23.live.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/MyAppTheme.EnableActionBar">
+            android:theme="@style/MyAppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

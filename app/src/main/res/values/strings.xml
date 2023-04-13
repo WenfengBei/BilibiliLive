@@ -10,4 +10,5 @@
     <string name="textGoBackPage">返回上页</string>
     <string name="textBackLiveNavi">导航主页</string>
     <string name="textSetScrOri">翻转屏幕</string>
+    <string name="menuAboutApp">关于APP</string>
 </resources>
