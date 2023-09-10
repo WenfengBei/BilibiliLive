@@ -145,6 +145,29 @@
         button#tyresSearchPage {
             background-color: #f30213;
         }
+        
+        figure {
+            border: thin #c0c0c0 solid;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            max-width: 160px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        img {
+            max-width: 160px;
+            max-height: 160px;
+        }
+        
+        figcaption {
+            background-color: #FF80AB;
+            color: #fff;
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+        }
     </style>
 
     <script type="text/javascript">
@@ -191,6 +214,7 @@
         <p>航天直播 | <a href="https://live.bilibili.com/h5/21298619"><button class="toLive">直播地球</button></a></p>
         <p>LOL赛事 | <a href="https://live.bilibili.com/h5/6"><button class="toLive">哔哩哔哩英雄联盟赛事</button></a></p>
         <p>CS赛事 | <a href="https://live.bilibili.com/h5/35"><button class="toLive">CSGO官方赛事</button></a></p>
+        <p>@雷雨Lyy 粉丝量实时趋势 | <a href="https://live.bilibili.com/h5/22691448"><button class="toLive">aDm8H</button></a></p>
     </div>
     <div>
         <h2>萌宠主播</h2>
@@ -201,9 +225,9 @@
     </div>
     <div>
         <h2>特别节目</h2>
-        <p>A-SOUL | <a href="https://live.bilibili.com/h5/22637261"><button class="toLive">嘉然今天吃什么</button></a></p>
         <p>原神版本前瞻特别节目 | <a href="https://live.bilibili.com/h5/21987615"><button class="toLive">原神</button></a></p>
         <p>前瞻直播兑换码 | <a href="https://feixiaoqiu.com/exchange_code/"><button class="toLive">非小酋</button></a></p>
+        <p>星铁开服倒计时 | <a href="https://live.bilibili.com/h5/27263119"><button class="toLive">崩坏星穹铁道</button></a></p>
         <h3>世界一级方程式赛车</h3>
         <p>央视5套 | <a href="https://tv.cctv.com/live/cctv5"><button class="toLive">CCTV-5</button></a></p>
         <p>央视5+ | <a href="https://tv.cctv.com/live/cctv5plus"><button class="toLive">CCTV-5+</button></a></p>
@@ -216,6 +240,12 @@
         <p>中国航天发射 | <a href="https://tv.cctv.com/live/cctv13"><button class="toLive">CCTV-13</button></a></p>
         <p>B站直播 | <a href="https://live.bilibili.com/h5/21686237"><button class="toLive">央视新闻</button></a></p>
         <p>航天发射解说 | <a href="https://live.bilibili.com/h5/830733"><button class="toLive">PureCosmos</button></a></p>
+        <h3>Ａ－ＳＯＵＬ</h3>
+        <p>Ａ | <a href="https://live.bilibili.com/h5/22625025"><button class="toLive">向晚大魔王</button></a></p>
+        <p>Ｂ | <a href="https://live.bilibili.com/h5/22632424"><button class="toLive">贝拉kira</button></a></p>
+        <p>Ｃ | <a href="https://live.bilibili.com/h5/22634198"><button class="toLive">珈乐Carol</button></a></p>
+        <p>Ｄ | <a href="https://live.bilibili.com/h5/22637261"><button class="toLive">嘉然今天吃什么</button></a></p>
+        <p>Ｅ | <a href="https://live.bilibili.com/h5/22625027"><button class="toLive">乃琳Queen</button></a></p>
     </div>
     <div>
         <h2>Bilibili Live Android APP 下载区</h2>
@@ -256,11 +286,22 @@
         <p>全球航天动态 | <a href="https://www.space.com/"><button class="toLive">Space</button></a></p>
         <p>公开的发射计划 | <a href="https://spaceflightnow.com/launch-schedule/"><button class="toLive">Launch Schedule</button></a></p>
         <p>航天爱好者网 | <a href="http://www.spaceflightfans.cn/"><button class="toLive" disabled="disabled">已无法访问</button></a></p>
-		<h3>军事新闻</h3>
+        <h3>军事新闻</h3>
         <p>国防部 | <a href="http://www.mod.gov.cn/"><button class="toLive">中华人民共和国国防部</button></a></p>
         <p>军网中文 | <a href="http://www.81.cn/"><button class="toLive">中国军网</button></a></p>
         <p>军网英文 | <a href="http://eng.chinamil.com.cn/"><button class="toLive">China Military</button></a></p>
         <p>全球海军动态 | <a href="https://www.navalnews.com/"><button class="toLive">Naval News</button></a></p>
+    </div>
+    <div>
+        <h2>听歌专区</h2>
+        <p>致重新出发的自己。</p>
+        <p>纵贯线 | <a href="music/wmzt.html"><button class="toLive">亡命之徒</button></a></p>
+        <p>Avicii | <a href="music/heybrother.html"><button class="toLive">Hey Brother</button></a></p>
+        <p>三重野瞳 | <a href="music/boysbeambitious.html"><button class="toLive">小渡骑独轮车</button></a></p>
+        <figure>
+            <img src="BLG.Bin.jpg" alt="BLG.Bin作出重要指示">
+            <figcaption>BLG.Bin作出重要指示</figcaption>
+        </figure>
     </div>
     <div id="bottomDiv">
         <h2>特别链接区</h2>
@@ -279,14 +320,14 @@
                 菜鸟教程 官方网站
             </button>
         </a>
-        <a href="https://c.runoob.com/">
-            <button id="runoobOfficial" class="specialLink">
-                菜鸟工具 官方网站
-            </button>
-        </a>
         <a href="https://oi-wiki.org">
             <button id="oi-wikiPage" class="specialLink">
                 OI Wiki
+            </button>
+        </a>
+        <a href="https://dcms.net.cn/index.php/">
+            <button id="loginPage" class="specialLink">
+                DCMS WAP论坛
             </button>
         </a>
         <a href="https://computer.com">
